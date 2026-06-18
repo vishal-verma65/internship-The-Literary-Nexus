@@ -1,0 +1,20 @@
+{
+  "name": "literary-nexus",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "The Literary Nexus — Signature Literary Series landing page",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "clean": "rm -rf dist",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "esbuild": "^0.21.5",
+    "vite": "^7.1.7"
+  },
+  "dependencies": {
+    "gsap": "^3.15.0"
+  }
+}

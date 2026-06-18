@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>An Evening with Gala | The Literary Nexus Signature Series</title>
+  <meta name="description" content="Join The Literary Nexus's Signature Literary Series for an exclusive evening with Gala in Portland — readings, conversation, and book signing.">
+  <link rel="canonical" href="https://www.yourdomain.com/signature-series">
+
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="An Evening with Gala | The Literary Nexus">
+  <meta property="og:description" content="An exclusive evening with celebrated author Gala — The Literary Nexus's Signature Literary Series in Portland.">
+  <meta property="og:image" content="https://www.yourdomain.com/images/og-signature-series.jpg">
+  <meta property="og:url" content="https://www.yourdomain.com/signature-series">
+  <meta property="og:site_name" content="The Literary Nexus">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="An Evening with Gala | The Literary Nexus">
+  <meta name="twitter:description" content="An exclusive evening with celebrated author Gala — Signature Literary Series in Portland.">
+  <meta name="twitter:image" content="https://www.yourdomain.com/images/og-signature-series.jpg">
+
+  <link rel="icon" type="image/png" href="/favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://picsum.photos">
+  <link rel="preconnect" href="https://jsonplaceholder.typicode.com">
+  <link rel="preconnect" href="https://placehold.co">
+  <link rel="preconnect" href="https://httpbin.org">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="preload" as="image" href="https://picsum.photos/id/1015/1600/900" crossorigin>
+
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+  <noscript>
+    <div class="noscript-banner">JavaScript is required for the countdown, author profiles, and RSVP form on this page. Please enable it for the full experience.</div>
+  </noscript>
+
+  <header class="hero" id="hero">
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <p class="hero__subheadline">A Signature Series Engagement</p>
+      <h1 class="hero__headline" id="hero-headline"><span class="brand_name">The Literary Nexus</span> Presents: An <span class="evening">Evening</span> with <span class="event_name" id="author-name-placeholder">a Celebrated Author</span></h1>
+
+      <div class="countdown" id="countdown" aria-live="polite">
+        <span class="countdown__label">Event Commences In:</span>
+        <div class="countdown__units">
+          <div class="countdown__unit">
+            <span class="countdown__value" id="countdown-days">00</span>
+            <span class="countdown__name">Days</span>
+          </div>
+          <div class="countdown__unit">
+            <span class="countdown__value" id="countdown-hours">00</span>
+            <span class="countdown__name">Hours</span>
+          </div>
+          <div class="countdown__unit">
+            <span class="countdown__value" id="countdown-minutes">00</span>
+            <span class="countdown__name">Minutes</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="#rsvp" class="cta-button hero-cta" id="cta-button">Secure Your Exclusive Engagement Slot</a>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <section class="authors" id="authors" aria-labelledby="authors-heading">
+      <div class="section__inner">
+        <h2 class="section__heading" id="authors-heading">Featured Literary Personalities</h2>
+        <div class="authors__grid" id="authors-grid" aria-live="polite">
+        </div>
+        <p class="authors__status" id="authors-status" role="status"></p>
+      </div>
+      <div class="quotes">
+        <p>"Literature is a luxury; fiction is a necessity."</p>
+        <span>— G.K. Chesterton</span>
+      </div>
+    </section>
+
+    <template id="author-card-template">
+      <article class="author-card">
+        <img class="author-card__photo" src="" alt="" loading="lazy" width="120" height="120">
+        <h3 class="author-card__name"></h3>
+        <p class="author-card__bio"></p>
+        <button type="button" class="author-card__toggle" aria-expanded="false">View Full Profile</button>
+        <div class="author-card__full-bio" hidden></div>
+      </article>
+    </template>
+
+    <section class="schedule" id="schedule" aria-labelledby="schedule-heading">
+      <div class="section__inner">
+        <h2 class="section__heading" id="schedule-heading">Engagement Schedule &amp; Key Logistics</h2>
+        <ul class="schedule__list">
+          <li class="schedule__item">
+            <span class="schedule__time">7:00 PM</span>
+            <span class="schedule__desc">Doors Open &amp; Welcome Reception</span>
+          </li>
+          <li class="schedule__item">
+            <span class="schedule__time">7:30 PM</span>
+            <span class="schedule__desc">Author Reading &amp; Discussion</span>
+          </li>
+          <li class="schedule__item">
+            <span class="schedule__time">8:30 PM</span>
+            <span class="schedule__desc">Q&amp;A Session</span>
+          </li>
+          <li class="schedule__item">
+            <span class="schedule__time">9:00 PM</span>
+            <span class="schedule__desc">Book Signing &amp; Networking</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="rsvp" id="rsvp" aria-labelledby="rsvp-heading">
+      <div class="section__inner rsvp__grid">
+
+        <div class="rsvp__form-wrap">
+          <h2 class="section__heading" id="rsvp-heading">Reserve Your Seat</h2>
+          <form class="rsvp__form" id="rsvp-form" method="POST" action="https://httpbin.org/post" novalidate>
+            <div class="form__field">
+              <label for="rsvp-name">Full Name</label>
+              <input type="text" id="rsvp-name" name="name" placeholder="Your Full Name" required>
+            </div>
+            <div class="form__field">
+              <label for="rsvp-email">Email</label>
+              <input type="email" id="rsvp-email" name="email" placeholder="Your Professional Email" required>
+            </div>
+            <div class="form__field">
+              <label for="rsvp-affiliation">Affiliation <span class="form__optional">(Optional)</span></label>
+              <input type="text" id="rsvp-affiliation" name="affiliation" placeholder="Your Organization/Affiliation">
+            </div>
+            <p class="form__feedback" id="form-feedback" role="status" aria-live="polite"></p>
+            <button type="submit" class="cta-button cta-button--form">Confirm Your Attendance</button>
+          </form>
+        </div>
+
+        <div class="rsvp__venue">
+          <h3 class="venue__name">Portland Grand Ballroom</h3>
+          <p class="venue__address">1000 SW Broadway, Portland, OR 97205</p>
+          <a href="https://maps.google.com/?q=The+Literary+Nexus+Portland" target="_blank" rel="noopener" aria-label="View venue location on Google Maps" class="venue__map-link">
+            <img class="venue__map-image" src="assets/images/poland.webp" data-remote-src="https://placehold.co/600x400?text=View+Map" alt="Map preview — opens venue location in Google Maps" width="600" height="400" loading="lazy">
+          </a>
+          <p class="venue__parking">Valet parking available. Self-park options within 2 blocks. Public transit accessible.</p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+      <p>&copy; 2026 The Literary Nexus. All rights reserved.</p>
+  </footer>
+
+  <script type="module" src="./assets/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+[
+  {
+    "id": 11,
+    "name": "Eleanor Voss",
+    "email": "eleanor.voss@literarynexus.example",
+    "company": {
+      "catchPhrase": "Weaving memory into modern myth.",
+      "bs": "Eleanor Voss is the award-winning author of three novels exploring inherited memory and diaspora. Her latest work, The Salt Archive, was a finalist for the National Book Award and has been translated into twelve languages."
+    }
+  },
+  {
+    "id": 22,
+    "name": "Marcus Whitfield",
+    "email": "marcus.whitfield@literarynexus.example",
+    "company": {
+      "catchPhrase": "Noir prose for an unquiet city.",
+      "bs": "Marcus Whitfield writes character-driven crime fiction set in the Pacific Northwest. A former investigative journalist, he brings a documentarian's eye for detail to every page of his Detective Reyna series."
+    }
+  },
+  {
+    "id": 33,
+    "name": "Priya Anand",
+    "email": "priya.anand@literarynexus.example",
+    "company": {
+      "catchPhrase": "Essays that sit with the uncomfortable.",
+      "bs": "Priya Anand is an essayist and cultural critic whose collection Half-Light examines belonging, technology, and grief. Her work has appeared in The Atlantic and Granta."
+    }
+  },
+  {
+    "id": 44,
+    "name": "Julian Cortes",
+    "email": "julian.cortes@literarynexus.example",
+    "company": {
+      "catchPhrase": "Speculative fiction with a human pulse.",
+      "bs": "Julian Cortes writes near-future speculative fiction grounded in working-class life. His debut novel, Low Orbit, won the Crawford Award and was praised for its emotional precision."
+    }
+  }
+]
