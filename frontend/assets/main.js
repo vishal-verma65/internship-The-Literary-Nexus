@@ -8,7 +8,7 @@ import { renderAuthorCards } from './modules/authorCards.js';
 import { initAuthorCardsAnimation, initScheduleAnimation, initRsvpAnimation } from './animations/animations.js';
 import { initBioToggle } from './modules/bioModal.js';
 import { initRsvpForm } from './modules/rsvpForm.js';
-import { initLazyLoad } from './modules/lazyLoad.js';
+import { initLazyLoad } from './modules/lazyload.js';
 
 gsap.registerPlugin(ScrollTrigger);
 
